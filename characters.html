@@ -186,6 +186,15 @@
     .char-icon {
       font-size: 3rem;
       margin-bottom: 12px;
+      min-height: 64px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .char-img {
+      max-height: 80px;
+      width: auto;
+      border-radius: 8px;
     }
     .char-card h3 {
       font-family: 'Literata', serif;
@@ -317,8 +326,8 @@
     </button>
     <ul class="nav-links">
       <li><a href="characters.html">Characters</a></li>
-      <li><a href="characters.html#spotlight">Super Poo</a></li>
       <li><a href="about.html">Creators</a></li>
+      <li><a href="video.html">Video</a></li>
       <li><a href="https://www.amazon.com/dp/1998528111" target="_blank" rel="noopener">Buy Now</a></li>
     </ul>
   </div>
@@ -336,28 +345,36 @@
     <div class="characters-grid">
       <!-- Super Poo -->
       <div class="char-card">
-        <div class="char-icon">💩</div>
+        <div class="char-icon">
+          <img src="superpoo-character.png" alt="Super Poo" class="char-img">
+        </div>
         <h3>Super Poo</h3>
         <p>Dungdale's #1 defender &mdash; a flying, swirl-shaped poop with a heart of gold and a cape that never quits!</p>
       </div>
 
       <!-- Gram & The Pooper Crew -->
       <div class="char-card">
-        <div class="char-icon">👊</div>
+        <div class="char-icon">
+          <img src="gram-pooper-crew.png" alt="Gram & The Pooper Crew" class="char-img">
+        </div>
         <h3>Gram &amp; The Pooper Crew</h3>
         <p>Super Poo's loyal sidekick team, always ready to jump in and help save the day when Dungdale needs them most.</p>
       </div>
 
       <!-- Super Spider -->
       <div class="char-card">
-        <div class="char-icon">🕷️</div>
+        <div class="char-icon">
+          <img src="spider.png" alt="Super Spider" class="char-img">
+        </div>
         <h3>Super Spider</h3>
         <p>The mischievous, eight-legged villain plotting to make Dungdale a total disaster. Watch out for his webs!</p>
       </div>
 
       <!-- Boo Boo Butt -->
       <div class="char-card">
-        <div class="char-icon">👻</div>
+        <div class="char-icon">
+          <img src="boo-boo-butt.png" alt="Boo Boo Butt" class="char-img">
+        </div>
         <h3>Boo Boo Butt</h3>
         <p>The villain's sneaky henchman who's always up to no good and causing chaos around every corner of Dungdale.</p>
       </div>
@@ -394,7 +411,7 @@
 
 <!-- ===== FOOTER ===== -->
 <footer>
-  <p>&copy; 2025 Super Poo Books. All rights reserved.</p>
+  <p>&copy; 2026 Super Poo Books. All rights reserved.</p>
   <p style="margin-top:6px;">
     <a href="https://www.amazon.com/dp/1998528111" target="_blank" rel="noopener">Available on Amazon</a>
   </p>

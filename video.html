@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>About the Creators — Super Poo Official Character Guide</title>
+  <title>Video — Super Poo Official Character Guide</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Literata:wght@400;700;900&family=Mulish:wght@400;600;700&display=swap" rel="stylesheet">
@@ -103,46 +103,6 @@
     }
     .hero h1 span { color: #0bbcb7; }
 
-    /* Hero character image — transparent, no background */
-    .hero-character {
-      max-width: 350px;
-      margin: 20px auto 28px;
-      display: block;
-    }
-
-    .hero-subtitle {
-      font-family: 'Literata', serif;
-      font-size: clamp(1rem, 2.5vw, 1.35rem);
-      color: #444;
-      margin-bottom: 32px;
-      font-weight: 400;
-    }
-
-    .hero-book {
-      max-width: 420px;
-      margin: 0 auto 36px;
-      filter: drop-shadow(0 12px 28px rgba(0,0,0,0.18));
-    }
-
-    .btn-buy {
-      display: inline-block;
-      background: #f5a623;
-      color: #fff;
-      font-family: 'Mulish', sans-serif;
-      font-weight: 700;
-      font-size: 1.15rem;
-      padding: 16px 48px;
-      border-radius: 50px;
-      letter-spacing: 1px;
-      box-shadow: 0 4px 14px rgba(245,166,35,0.4);
-      transition: transform 0.2s, box-shadow 0.2s, background 0.2s;
-    }
-    .btn-buy:hover {
-      transform: translateY(-2px);
-      background: #e6951a;
-      box-shadow: 0 6px 20px rgba(245,166,35,0.5);
-    }
-
     /* ===== SECTION SHARED ===== */
     section { padding: 64px 24px; }
     .section-inner { max-width: 960px; margin: 0 auto; }
@@ -162,115 +122,27 @@
       margin: 0 auto 40px;
     }
 
-    /* ===== ABOUT / CHARACTERS ===== */
-    .about {
+    /* ===== VIDEO SECTION ===== */
+    .video-content {
       background: #fafafa;
     }
-    .characters-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-      gap: 28px;
-    }
-    .char-card {
-      background: #fff;
+    .video-wrapper {
+      position: relative;
+      width: 100%;
+      max-width: 800px;
+      margin: 0 auto;
+      aspect-ratio: 16 / 9;
       border-radius: 16px;
-      padding: 28px 22px;
-      text-align: center;
-      box-shadow: 0 4px 16px rgba(0,0,0,0.06);
-      transition: transform 0.25s, box-shadow 0.25s;
-    }
-    .char-card:hover {
-      transform: translateY(-4px);
+      overflow: hidden;
       box-shadow: 0 8px 28px rgba(0,0,0,0.1);
     }
-    .char-icon {
-      font-size: 3rem;
-      margin-bottom: 12px;
-    }
-    .char-card h3 {
-      font-family: 'Literata', serif;
-      font-weight: 700;
-      font-size: 1.15rem;
-      margin-bottom: 8px;
-      color: #0bbcb7;
-    }
-    .char-card p {
-      font-size: 0.93rem;
-      color: #555;
-      line-height: 1.55;
-    }
-
-    /* ===== SUPER POO SPOTLIGHT ===== */
-    .spotlight {
-      background: linear-gradient(135deg, #0bbcb7 0%, #0ea89e 100%);
-      color: #fff;
-    }
-    .spotlight .section-title { color: #fff; }
-    .spotlight-content {
-      display: flex;
-      align-items: center;
-      gap: 48px;
-      flex-wrap: wrap;
-      justify-content: center;
-    }
-    .spotlight-img {
-      flex: 0 0 260px;
-      max-width: 260px;
-    }
-    .spotlight-img img {
-      border-radius: 16px;
-      filter: drop-shadow(0 8px 24px rgba(0,0,0,0.2));
-    }
-    .spotlight-text {
-      flex: 1 1 340px;
-      min-width: 280px;
-    }
-    .spotlight-text h3 {
-      font-family: 'Literata', serif;
-      font-size: 1.4rem;
-      margin-bottom: 14px;
-      font-weight: 700;
-    }
-    .spotlight-text p {
-      font-size: 1.02rem;
-      line-height: 1.7;
-      margin-bottom: 12px;
-      opacity: 0.95;
-    }
-
-    /* ===== CREATORS ===== */
-    .creators { background: #fef9e7; }
-    .creators-content {
-      display: flex;
-      gap: 40px;
-      align-items: center;
-      flex-wrap: wrap;
-      justify-content: center;
-    }
-    .creators-photo {
-      flex: 0 0 280px;
-      max-width: 280px;
-    }
-    .creators-photo img {
-      border-radius: 16px;
-      box-shadow: 0 6px 20px rgba(0,0,0,0.1);
-    }
-    .creators-text {
-      flex: 1 1 360px;
-      min-width: 280px;
-    }
-    .creators-text h3 {
-      font-family: 'Literata', serif;
-      font-size: 1.3rem;
-      font-weight: 700;
-      margin-bottom: 12px;
-      color: #1a1a1a;
-    }
-    .creators-text p {
-      font-size: 1rem;
-      color: #444;
-      line-height: 1.7;
-      margin-bottom: 12px;
+    .video-wrapper iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border: none;
     }
 
     /* ===== BOTTOM CTA ===== */
@@ -290,6 +162,25 @@
       color: #555;
       font-size: 1.05rem;
       margin-bottom: 28px;
+    }
+
+    .btn-buy {
+      display: inline-block;
+      background: #f5a623;
+      color: #fff;
+      font-family: 'Mulish', sans-serif;
+      font-weight: 700;
+      font-size: 1.15rem;
+      padding: 16px 48px;
+      border-radius: 50px;
+      letter-spacing: 1px;
+      box-shadow: 0 4px 14px rgba(245,166,35,0.4);
+      transition: transform 0.2s, box-shadow 0.2s, background 0.2s;
+    }
+    .btn-buy:hover {
+      transform: translateY(-2px);
+      background: #e6951a;
+      box-shadow: 0 6px 20px rgba(245,166,35,0.5);
     }
 
     /* ===== FOOTER ===== */
@@ -324,30 +215,35 @@
   </div>
 </header>
 
-<!-- ===== CREATORS ===== -->
-<section class="creators" id="creators">
+<!-- ===== HERO SECTION ===== -->
+<section class="hero">
+  <div class="hero-inner">
+    <h1>Super Poo <span>Video</span></h1>
+    <p class="hero-subtitle">Watch the adventure unfold!</p>
+  </div>
+</section>
+
+<!-- ===== VIDEO CONTENT ===== -->
+<section class="video-content">
   <div class="section-inner">
-    <h2 class="section-title">Meet the Creators</h2>
-    <div class="creators-content">
-      <div class="creators-photo">
-        <img
-          src="3.jpeg"
-          alt="Matthew MacMillan and Eric Seo - Creators of Super Poo"
-        >
-      </div>
-      <div class="creators-text">
-        <h3>Matthew MacMillan &amp; Eric Seo</h3>
-        <p>
-When MATTHEW MacMILLAN created Super Poo, he told his best friend ERIC SEO about it. Eric loved the idea and agreed to get involved. Ever since, they've been working together at school and home, making hand-made books, thinking up fun stories, drawing character sketches, and generally having a blast! Both Eric and Matthew are grade 2 students in Toronto, Canada and live with their amazing families.
-        </p>
-        <p>
-          Together, they dreamed up the wacky world of Dungdale and all of its unforgettable characters.
-          The Super Poo Official Character Guide is their latest creation &mdash; packed with everything
-          fans need to know about the heroes and villains of their imaginative universe.
-        </p>
-      </div>
+    <div class="video-wrapper">
+      <iframe 
+        src="https://www.youtube.com/embed/2qxSoff1L_g?si=5VITeip_BFpcOz9s"
+        title="YouTube video player" 
+        frameborder="0" 
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+        referrerpolicy="strict-origin-when-cross-origin" 
+        allowfullscreen>
+      </iframe>
     </div>
   </div>
+</section>
+
+<!-- ===== BOTTOM CTA ===== -->
+<section class="bottom-cta">
+  <h2>Ready to Explore Dungdale?</h2>
+  <p>Grab your copy of the Super Poo Official Character Guide today!</p>
+  <a href="https://www.amazon.com/dp/1998528111" target="_blank" rel="noopener" class="btn-buy">BUY NOW ON AMAZON</a>
 </section>
 
 <!-- ===== FOOTER ===== -->

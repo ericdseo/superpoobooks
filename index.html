@@ -86,12 +86,27 @@
     .hero {
       background: linear-gradient(135deg, #e0f7f5 0%, #fef9e7 50%, #fde8ef 100%);
       padding: 60px 24px 70px;
-      text-align: center;
       overflow: hidden;
     }
     .hero-inner {
-      max-width: 900px;
+      max-width: 1100px;
       margin: 0 auto;
+      display: flex;
+      align-items: center;
+      gap: 48px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    .hero-text {
+      flex: 1 1 360px;
+      min-width: 280px;
+      max-width: 520px;
+    }
+    .hero-media {
+      flex: 1 1 360px;
+      min-width: 280px;
+      display: flex;
+      justify-content: center;
     }
     .hero h1 {
       font-family: 'Literata', serif;
@@ -119,9 +134,14 @@
     }
 
     .hero-book {
-      max-width: 420px;
-      margin: 0 auto 36px;
+      max-width: 720px;
+      width: 100%;
       filter: drop-shadow(0 12px 28px rgba(0,0,0,0.18));
+    }
+
+    @media (max-width: 800px) {
+      .hero-inner { text-align: center; }
+      .hero-text { max-width: none; }
     }
 
     .btn-buy {
@@ -317,8 +337,8 @@
     </button>
     <ul class="nav-links">
       <li><a href="characters.html">Characters</a></li>
-      <li><a href="characters.html#spotlight">Super Poo</a></li>
       <li><a href="about.html">Creators</a></li>
+      <li><a href="video.html">Video</a></li>
       <li><a href="https://www.amazon.com/dp/1998528111" target="_blank" rel="noopener">Buy Now</a></li>
     </ul>
   </div>
@@ -327,15 +347,18 @@
 <!-- ===== HERO ===== -->
 <section class="hero">
   <div class="hero-inner">
-    <h1>Introducing the <span>Super Poo</span> Official Character Guide</h1>
-
-    <p class="hero-subtitle">Meet the Heroes (and Villains) of Dungdale!</p>
-    <img
-      src="book-cover.png"
-      alt="Super Poo Official Character Guide - Front and Back Cover"
-      class="hero-book"
-    >
-    <a href="https://www.amazon.com/dp/1998528111" target="_blank" rel="noopener" class="btn-buy">BUY NOW ON AMAZON</a>
+    <div class="hero-text">
+      <h1>Introducing the <span>Super Poo</span> Official Character Guide</h1>
+      <p class="hero-subtitle">Meet the Heroes (and Villains) of Dungdale!</p>
+      <a href="https://www.amazon.com/dp/1998528111" target="_blank" rel="noopener" class="btn-buy">BUY NOW ON AMAZON</a>
+    </div>
+    <div class="hero-media">
+      <img
+        src="book-cover.png"
+        alt="Super Poo Official Character Guide - Front and Back Cover"
+        class="hero-book"
+      >
+    </div>
   </div>
 </section>
 
@@ -348,7 +371,7 @@
 
 <!-- ===== FOOTER ===== -->
 <footer>
-  <p>&copy; 2025 Super Poo Books. All rights reserved.</p>
+  <p>&copy; 2026 Super Poo Books. All rights reserved.</p>
   <p style="margin-top:6px;">
     <a href="https://www.amazon.com/dp/1998528111" target="_blank" rel="noopener">Available on Amazon</a>
   </p>
